@@ -3,88 +3,10 @@
 <head>
 	<title>Profile</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-<body>
-    <style type="text/css">
-    	.navbar-brand{
-    		font-size:20px;
-    		font-weight: bolder;
-    		font-style: italic;
-    	}
-        html,body{
-            height: 100%;
-            margin-bottom:50px;
-
-        }
-    	.footer {
-            position: fixed;
-            height: 50px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            margin-bottom: 0px;
-            background-color: #f5f5f5;
-        }
-        .brand-icons{
-        	text-align: right;
-        	font-size: 22px;
-        }
-	    .forgot{
-		    margin-left: 20px;
-	    }
-	    #form-header{
-            font-size: 200%;
-            width:105%;
-            margin-left: 0px;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-	    }
-        .form-group{
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        .col-md-4{
-            border-style: ridge;
-            border-radius: 15px;
-        }
-        .navbar{
-            margin-bottom: 0px; 
-        }
-    </style>
-
-    <nav class="navbar navbar-default">
-    <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/userhome/">Rexsoc</a>
-    </div>
-    <ul class= "nav navbar-nav">
-       <li><a href="/blog/">Blog </a></li>
-       <li><a href="/about/">About </a></li>
-       <li><a href="/help/">Help </a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      {% block nav %}
-      {% endblock %}
-    </ul>
-    </div>
-    </nav>
-
+<body style="text-align: center;">
     {% block content %}
 
     {% endblock %}
-
-
-   <footer class="footer">
-   <div class="container">
-   <br>
-   	<p style="float:left;">© 2017 Pratik Solutions Ltd.</p>
-   	<p class="brand-icons"><span class="fa fa-facebook"></span>    <span class="fa fa-github"></span>    <span class="fa fa-twitter"></span>    <span class="fa fa-youtube"></span></p>
-   </div>
-   
-
-   </footer>
-
 </body>
 </html>
