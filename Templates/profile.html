@@ -5,6 +5,19 @@
 
 Hello {{request.user.username}} !! <br><br>
 Balance: {{balance}}
+{% if msg%}
+    <br><br>
+    {{msg}}
+{% endif %}
+
+<br><br>
+
+<form method="post">
+        <input type="text" name="username" placeholder="Enter Username">
+        <input type="text" name="amount" placeholder="Enter Amount">
+        <input type="submit" value="Submit">
+        {% csrf_token %}
+</form>
 <br><br>
 <a href="{% url 'logout' %}">logout</a>
 
