@@ -3,7 +3,8 @@
 {% block content %}
 
 
-Hello {{request.user.username}} !!
+Hello {{request.user.username}} !! <br><br>
+Balance: {{balance}}
 <br><br>
 <a href="{% url 'logout' %}">logout</a>
 
